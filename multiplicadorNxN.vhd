@@ -41,7 +41,7 @@ begin
     if clk'event and clk = '1' then --  executes on rising edge of clock
       estado_act <= estado_sig;
       acu_act <= acu_sig;
-      contador_sig<= contador_act;
+      contador_act<= contador_sig;
     end if;
   end process;
 

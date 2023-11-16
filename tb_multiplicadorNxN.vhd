@@ -10,7 +10,7 @@ architecture tb of tb_multiplicadorNxN is
   signal clk, st, done: std_logic;
   signal mplier, mcand: std_logic_vector((N-1) downto 0);
   signal product: std_logic_vector((2*N)-1 downto 0);
-  component mult_sec_NxN
+  component multiplicadorNxN
     port (
       clk, st: in std_logic;
       mplier, mcand: in std_logic_vector((N-1) downto 0);
@@ -20,7 +20,7 @@ architecture tb of tb_multiplicadorNxN is
   end component;
 
   begin
-    UUT: mult_sec_NxN
+    UUT: multiplicadorNxN
     port map (
       clk => clk,
       st => st,
