@@ -22,7 +22,7 @@ architecture comportamiento of mult_sec_NxN is
   -- alias acu_suma: std_logic_vector(N downto 0) is acu_act(2*N-1 downto N);
   -- alias m: std_logic is acu_act(0); -- m is bit 0 of acc
   signal acu_suma: std_logic_vector((N-1) downto 0);
-  signal contador : integer range 0 to (N-1);
+  signal contador_act, contador_sig : integer range 0 to N;
   signal k: std_logic := '0'; -- el bit que me indica que se completaron N-1 Sh (N-1 desplazamientos) valor inicial en 0
   signal m: std_logic;
 begin
@@ -41,6 +41,7 @@ begin
     if clk'event and clk = '1' then --  executes on rising edge of clock
       estado_act <= estado_sig;
       acu_act <= acu_sig;
+      contador_sig<= contador_act;
     end if;
   end process;
 
@@ -87,17 +88,17 @@ begin
     if Load='1' then 
       -- carga multiplicador en bits menos significativos
       -- borra bits restantes
-	  contador <= 0;
+	    contador_sig <= 0;
       acu_sig <= (others =>'0');
-	  acu_sig((N-1) downto 0) <= mplier;
+	    acu_sig((N-1) downto 0) <= mplier;
     elsif Ad='1' then
       -- carga la suma en los N+1 bits mas significativos del acumulador
       acu_sig <= suma & acu_act((N-1) downto 0);
     elsif Sh='1' then
       -- desplaza a derecha, completa MSB con cero
       acu_sig <= '0' & acu_act((2*N) downto 1);
-	  contador <= contador + 1;
-		if contador = (N-1) then
+	    contador_sig <= contador_act + 1;
+		if contador_act = (N-1) then
 			k <= '1';
 		else
 			k <= '0';
@@ -105,7 +106,7 @@ begin
     else 
       -- Si ninguna de las señales está activa, mantiene el contenido
       acu_sig <= acu_act;
-	  k <='0';
+	    k <='0';
     end if;
   end process;
 end comportamiento;
