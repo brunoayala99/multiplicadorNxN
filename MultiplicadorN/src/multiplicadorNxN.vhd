@@ -23,7 +23,7 @@ architecture comportamiento of mult_sec_NxN is
   -- alias m: std_logic is acu_act(0); -- m is bit 0 of acc
   signal acu_suma: std_logic_vector((N-1) downto 0);
   signal contador_act, contador_sig : integer range 0 to N;
-  signal k: std_logic := '0'; -- el bit que me indica que se completaron N-1 Sh (N-1 desplazamientos) valor inicial en 0
+  signal k: std_logic; -- el bit que me indica que se completaron N-1 Sh (N-1 desplazamientos) valor inicial en 0
   signal m: std_logic;
 begin
   m <= acu_act(0);
@@ -46,7 +46,7 @@ begin
   end process;
 
   -- logica del estado siguiente del controlador
-  process (estado_act, st, m)
+  process (estado_act, st, k, m)
   begin
       -- Default values
       Load <= '0';
@@ -83,7 +83,7 @@ begin
   end process;
 
   -- logica de estado siguiente del acumulador
-  process (Load, Sh, Ad, mplier, acu_act, suma)
+  process (Load, Sh, Ad, mplier, acu_act, contador_act, suma)
   begin
     if Load='1' then 
       -- carga multiplicador en bits menos significativos
@@ -107,6 +107,20 @@ begin
       -- Si ninguna de las señales está activa, mantiene el contenido
       acu_sig <= acu_act;
 	    k <='0';
+    end if;
+  end process;
+
+  --logica estado siguiente contador
+  process (Load, Sh, Ad, mplier, acu_act, contador_act suma)
+  begin
+    if Load='1' then 
+	    contador_sig <= 0;
+    elsif Ad='1' then
+      contador_sig <= contador_act;
+    elsif Sh='1' then
+	    contador_sig <= contador_act + 1;	
+    else 
+      contador_sig <= contador_act;
     end if;
   end process;
 end comportamiento;
