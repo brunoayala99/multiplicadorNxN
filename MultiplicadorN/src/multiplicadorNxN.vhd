@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity mult_sec_NxN is
+entity multiplicadorNxN is
   generic(
 	N: integer :=4 --tamanio predeterminado de los vectores
   );
@@ -11,9 +11,9 @@ entity mult_sec_NxN is
   mplier, mcand : in std_logic_vector((N-1) downto 0);
   done: out std_logic;
   product: out std_logic_vector ((2*N)-1 downto 0));
-end mult_sec_NxN;
+end multiplicadorNxN;
 
-architecture comportamiento of mult_sec_NxN is
+architecture comportamiento of multiplicadorNxN is
   type Estado is (S0, S1, S2, S3);
   signal estado_act, estado_sig : Estado;
   signal acu_act, acu_sig : std_logic_vector((2*N) downto 0); -- accumulator
@@ -83,12 +83,9 @@ begin
   end process;
 
   -- logica de estado siguiente del acumulador
-  process (Load, Sh, Ad, mplier, acu_act, contador_act, suma)
+  process (all)
   begin
     if Load='1' then 
-      -- carga multiplicador en bits menos significativos
-      -- borra bits restantes
-	    contador_sig <= 0;
       acu_sig <= (others =>'0');
 	    acu_sig((N-1) downto 0) <= mplier;
     elsif Ad='1' then
@@ -97,21 +94,15 @@ begin
     elsif Sh='1' then
       -- desplaza a derecha, completa MSB con cero
       acu_sig <= '0' & acu_act((2*N) downto 1);
-	    contador_sig <= contador_act + 1;
-		if contador_act = (N-1) then
-			k <= '1';
-		else
-			k <= '0';
-		end if;	
     else 
       -- Si ninguna de las señales está activa, mantiene el contenido
       acu_sig <= acu_act;
-	    k <='0';
     end if;
   end process;
 
   --logica estado siguiente contador
-  process (Load, Sh, Ad, mplier, acu_act, contador_act suma)
+  --luego hacerlo sin process
+  process (all)
   begin
     if Load='1' then 
 	    contador_sig <= 0;
@@ -123,4 +114,7 @@ begin
       contador_sig <= contador_act;
     end if;
   end process;
+
+  --logica salida contador
+  k <= '1' when contador_act=(N-1) else '0';
 end comportamiento;
