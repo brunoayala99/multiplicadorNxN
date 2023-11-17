@@ -1,4 +1,4 @@
-library ieee;
+/*library ieee;
 use ieee.std_logic_1164. all;
 use ieee.numeric_std.all;
 -- use ieee.std_logic_arith. all;
@@ -38,3 +38,58 @@ begin
     std.env.stop;
   end process;
 end test1;
+*/
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity testbench_mult_sec_4x4 is
+end entity testbench_mult_sec_4x4;
+
+architecture tb_arch of testbench_mult_sec_4x4 is
+  signal clk, st : std_logic := '0';
+  signal mplier, mcand : std_logic_vector(3 downto 0) := "0010";
+  signal done : std_logic;
+  signal product : std_logic_vector(7 downto 0);
+
+  -- instantiate the 4x4 multiplier
+  component mult_sec_4x4
+    port (
+      clk, st: in std_logic;
+      mplier, mcand : in std_logic_vector(3 downto 0);
+      done: out std_logic;
+      product: out std_logic_vector (7 downto 0)
+    );
+  end component;
+
+  -- clock process
+
+  -- clock process
+  process
+  begin
+    wait for 20 ns;
+    clk <= not clk;  -- Invierte el valor de clk cada 5 ns
+  end process;
+
+  -- stimuli process
+  process
+  begin
+    wait for 10 ns;
+    st <= '1';
+    wait for 10 ns;
+    st <= '0';
+    wait for 100 ns;
+    assert done = '1' report "Multiplication failed" severity error;
+    wait;
+  end process;
+
+  -- instantiate the 4x4 multiplier
+  UUT : mult_sec_4x4
+    port map (
+      clk => clk,
+      st => st,
+      mplier => mplier,
+      mcand => mcand,
+      done => done,
+      product => product
+    );
+end architecture tb_arch;
