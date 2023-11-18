@@ -1,4 +1,5 @@
 library ieee;
+library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
@@ -64,7 +65,10 @@ begin
 			if m = '1' then
 				Ad<='1';
 				estado_sig <= S2;
-				elsif k='1' then
+				elsif k='1' and m='0' then
+				Sh<='1';
+				estado_sig <= S3;
+				elsif k='0' and m='0' then
 				Sh<='1';
 				estado_sig <= S1;
 			end if;
@@ -83,7 +87,7 @@ begin
   end process;
 
   -- logica de estado siguiente del acumulador
-  process (all)
+  process (Load, acu_act, suma, Sh, Ad)
   begin
     if Load='1' then 
       acu_sig <= (others =>'0');
@@ -102,12 +106,12 @@ begin
 
   --logica estado siguiente contador
   --luego hacerlo sin process
-  process (all)
+  process (Load, Sh, contador_act)
   begin
     if Load='1' then 
 	    contador_sig <= 0;
-    elsif Ad='1' then
-      contador_sig <= contador_act;
+    --elsif Ad='1' then
+      --contador_sig <= contador_act;
     elsif Sh='1' then
 	    contador_sig <= contador_act + 1;	
     else 

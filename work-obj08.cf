@@ -1,7 +1,0 @@
-v 4
-file . "MultiplicadorN/src/multiplicadorNxN.vhd" "34b19908333dea125ae1f0dc37fe9961acaf7d93" "20231117120732.111":
-  entity mult_sec_nxn at 1( 0) + 0 on 17;
-  architecture comportamiento of mult_sec_nxn at 16( 350) + 0 on 18;
-file . "MultiplicadorN/src/tb_multiplicadorNxN.vhd" "1e2106fc2f7cc89023b6e74b08c7d893255c2741" "20231117120742.770":
-  entity tb_multiplicadornxn at 1( 0) + 0 on 19;
-  architecture tb of tb_multiplicadornxn at 8( 126) + 0 on 20;
