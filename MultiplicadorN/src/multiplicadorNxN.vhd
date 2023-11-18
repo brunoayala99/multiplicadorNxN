@@ -23,7 +23,7 @@ architecture comportamiento of multiplicadorNxN is
   -- alias acu_suma: std_logic_vector(N downto 0) is acu_act(2*N-1 downto N);
   -- alias m: std_logic is acu_act(0); -- m is bit 0 of acc
   signal acu_suma: std_logic_vector((N-1) downto 0);
-  signal contador_act, contador_sig : integer range 0 to N;
+  signal contador_act, contador_sig: integer range 0 to N;
   signal k: std_logic; -- el bit que me indica que se completaron N-1 Sh (N-1 desplazamientos) valor inicial en 0
   signal m: std_logic;
 begin
@@ -106,19 +106,22 @@ begin
 
   --logica estado siguiente contador
   --luego hacerlo sin process
-  process (Load, Sh, contador_act)
-  begin
-    if Load='1' then 
-	    contador_sig <= 0;
+  --process (Load, Sh, contador_act)
+  --begin
+    --if Load='1' then 
+	  --  contador_sig <= 0;
     --elsif Ad='1' then
       --contador_sig <= contador_act;
-    elsif Sh='1' then
-	    contador_sig <= contador_act + 1;	
-    else 
-      contador_sig <= contador_act;
-    end if;
-  end process;
-
+    --elsif Sh='1' then
+	  --  contador_sig <= contador_act + 1;	
+    --else 
+      --contador_sig <= contador_act;
+    --end if;
+  --end process;
+  
+	contador_sig<=	0 					when Load='1' else 
+					(contador_act + 1) 	when (Sh='1' and k='0')		else
+					contador_act;				
   --logica salida contador
-  k <= '1' when contador_act=(N-1) else '0';
+  k <= '1' when contador_act>=(N-1) else '0';
 end comportamiento;
