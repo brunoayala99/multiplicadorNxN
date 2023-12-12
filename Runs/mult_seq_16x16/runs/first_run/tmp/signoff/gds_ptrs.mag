@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 16816 18960
+string GDS_END 1250090
+string GDS_FILE /openlane/designs/mult_seq_16x16/runs/first_run/results/signoff/mult_seq_16x16.magic.gds
+string GDS_START 364062
+<< end >>

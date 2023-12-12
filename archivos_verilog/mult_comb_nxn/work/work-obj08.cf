@@ -1,0 +1,4 @@
+v 4
+file "/home/brunoayala/multiplicador/multiplicadorNxN/mult_comb_nxn/" "src/mult_comb_nxn.vhd" "830c81ddfca3f8c0bb1ae7337421bd610e78b002" "20231207193543.803":
+  entity mult_comb_nxn at 1( 0) + 0 on 11;
+  architecture rtl of mult_comb_nxn at 13( 299) + 0 on 12;

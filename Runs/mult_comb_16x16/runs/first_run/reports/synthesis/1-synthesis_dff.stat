@@ -1,0 +1,23 @@
+
+53. Printing statistics.
+
+=== mult_comb_16x16 ===
+
+   Number of wires:               1550
+   Number of wire bits:           1611
+   Number of public wires:           3
+   Number of public wire bits:      64
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1579
+     $_ANDNOT_                     462
+     $_AND_                        181
+     $_NAND_                       122
+     $_NOR_                         45
+     $_NOT_                         45
+     $_ORNOT_                       32
+     $_OR_                         191
+     $_XNOR_                       105
+     $_XOR_                        396
+

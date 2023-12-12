@@ -1,0 +1,19 @@
+Design Name: mult_seq_32x32
+Run Directory: /openlane/designs/mult_seq_32x32/runs/first_run
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/mult_seq_32x32/runs/first_run/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/mult_seq_32x32/runs/first_run/logs/signoff/39-mult_seq_32x32.lef.lvs.log
+Number of nets: 757                        |Number of nets: 757                        
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/mult_seq_32x32/runs/first_run/logs/signoff/41-arc.log
+Pin violations: 1
+Net violations: 1

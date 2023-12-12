@@ -1,0 +1,4 @@
+v 4
+file "/home/brunoayala/multiplicador/multiplicadorNxN/mult_sec_nxn/" "src/multiplicadorNxN.vhd" "9ed9e5da7634f02e06e8db569bf3da7183b4029b" "20231207213951.695":
+  entity multiplicadornxn at 1( 0) + 0 on 11;
+  architecture comportamiento of multiplicadornxn at 17( 373) + 0 on 12;

@@ -1,0 +1,1 @@
+lvs {/openlane/designs/mult_comb_16x16/runs/first_run/results/signoff/mult_comb_16x16.spice mult_comb_16x16} {/openlane/designs/mult_comb_16x16/runs/first_run/tmp/signoff/36-mult_comb_16x16.pnl.v mult_comb_16x16} /home/brunoayala/.volare/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/mult_comb_16x16/runs/first_run/logs/signoff/39-mult_comb_16x16.lef.lvs.log -json

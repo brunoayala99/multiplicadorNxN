@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 68753 70897
+string GDS_END 17902208
+string GDS_FILE /openlane/designs/mult_comb_32x32/runs/first_run/results/signoff/mult_comb_32x32.magic.gds
+string GDS_START 1056698
+<< end >>

@@ -1,0 +1,519 @@
+
+Magic 8.3 revision 416 - Compiled on Tue Jul 25 11:03:51 UTC 2023.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Using technology "sky130A", version 1.0.439-0-g1341f54
+Reading LEF data from file /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef.
+This action cannot be undone.
+LEF read, Line 78 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 79 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 112 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 114 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 115 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 121 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 122 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 123 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 156 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 164 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 165 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 167 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 168 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 206 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 207 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 209 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 248 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 249 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 251 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 290 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 291 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 797 lines.
+Reading DEF data from file /openlane/designs/mult_comb_32x32/runs/first_run/results/routing/mult_comb_32x32.def.
+This action cannot be undone.
+  Processed 4 vias total.
+Cell sky130_fd_sc_hd__diode_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__fill_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__decap_3 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__fill_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__decap_8 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__decap_6 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_ef_sc_hd__decap_12 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__decap_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__tapvpwrvgnd_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__buf_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_8 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__buf_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and4_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand2_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and3_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a22o_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21bo_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__xor2_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and4b_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or2_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a22oi_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor2_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand4_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and2_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand3_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21o_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a32o_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and2b_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__xnor2_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21oi_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or2_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__inv_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and4bb_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a31o_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or2b_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__xnor2_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o2bb2a_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and4_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand2_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__xnor2_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21oi_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand4_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__xor2_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o211a_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a211oi_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor3_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o21ai_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o211ai_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a211o_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or4bb_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a2bb2o_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or3_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o21ai_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__buf_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o211ai_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or3_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o211a_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__xor2_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and3b_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor2_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand3_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a22oi_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a211oi_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or4_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o22ai_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or4bb_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and4bb_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor2_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o21a_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o21ba_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a211oi_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a31oi_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and3_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or3_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o211ai_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o31a_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or2_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand4_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor3_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a211o_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand3b_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand3_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o21bai_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21o_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or3b_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor3_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor4_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o22a_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o32a_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o21bai_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a41o_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or4bb_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or2b_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a22oi_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o21ba_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor4_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or3b_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and2b_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a32o_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor3b_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__buf_6 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and2_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a31o_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or4_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o22ai_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a22o_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o22ai_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a31oi_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and4_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21oi_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o21a_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o32ai_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a2bb2o_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o21ai_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and4b_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o2111ai_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a2bb2oi_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor3b_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21bo_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21boi_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a32oi_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a2bb2oi_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o2bb2a_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and3b_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21boi_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o31a_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21boi_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o21bai_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a2111oi_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a211o_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21bo_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o32a_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or4b_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand4b_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand2_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a31o_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or4_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o311ai_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor3b_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or4b_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a221oi_4 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a31oi_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a2111o_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o311a_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o311ai_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__mux2_2 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__dlymetal6s2s_1 read from path /home/brunoayala/.volare/sky130A/libs.ref/sky130_fd_sc_hd/mag
+  Processed 15421 subcell instances total.
+  Processed 130 pins total.
+  Processed 2 special nets total.
+  Processed 6001 nets total.
+DEF read: Processed 133713 lines.
+Moving label "_00003_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_00073_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_00102_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_00143_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_00232_" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "_00242_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_00285_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_00304_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_00358_" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "_00361_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_00488_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_00532_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_00580_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_00624_" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "_00637_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_00639_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_00657_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_00672_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_00681_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_00729_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_00746_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_00813_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_00814_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_00824_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_00890_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_00951_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_00987_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_01043_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_01047_" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "_01050_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_01247_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_01305_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_01339_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_01349_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_01371_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_01404_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_01474_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_01502_" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "_01639_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_01652_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_01669_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_01677_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_01732_" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "_01774_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_01782_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_01783_" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "_01804_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_01820_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_01839_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_01855_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_01874_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_01957_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_01967_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_02035_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_02036_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_02080_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_02106_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_02120_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_02123_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_02157_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_02187_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_02229_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_02252_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_02375_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_02388_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_02408_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_02479_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_02562_" from metal3 to via2 in cell mult_comb_32x32.
+Moving label "_02588_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_02593_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_02606_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_02691_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_02720_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_02829_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_02840_" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "_02845_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_02846_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_02881_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_02894_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_02936_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_03015_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_03067_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_03070_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_03085_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_03115_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_03124_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_03137_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_03172_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_03216_" from metal3 to via2 in cell mult_comb_32x32.
+Moving label "_03254_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_03285_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_03318_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_03370_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_03373_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_03532_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_03541_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_03577_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_03680_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_03709_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_03744_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_03758_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_03808_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_03938_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_03959_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_04018_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_04083_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_04103_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_04188_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_04230_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_04237_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_04277_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_04297_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_04322_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_04337_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_04345_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_04375_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_04448_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_04468_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_04535_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_04564_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_04596_" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "_04647_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_04679_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_04722_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_04769_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_04805_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_04839_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_04941_" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "_05024_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_05093_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_05247_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_05276_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_05310_" from metal1 to viali in cell mult_comb_32x32.
+Moving label "_05346_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_05410_" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "_05421_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_05518_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_05540_" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "_05542_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_05589_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_05626_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "_05656_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_05676_" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "_05695_" from metal1 to via1 in cell mult_comb_32x32.
+Moving label "net106" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "net11" from metal3 to via3 in cell mult_comb_32x32.
+Moving label "net127" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "net20" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "net22" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "net45" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "net58" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "net69" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "net76" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "net77" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "product[16]" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "product[39]" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "product[51]" from metal2 to via1 in cell mult_comb_32x32.
+Moving label "product[55]" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "product[59]" from metal2 to via2 in cell mult_comb_32x32.
+Moving label "product[9]" from metal2 to via2 in cell mult_comb_32x32.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  343.765 x 354.485  ( 0.000,  0.000), ( 343.765,  354.485)  121859.523
+lambda:   34376.50 x 35448.50  (  0.00,  0.00 ), ( 34376.50,  35448.50)  1218595328.00
+internal:  68753 x 70897   (     0,  0    ), ( 68753,  70897)  4874381441
+   Generating output for cell sky130_fd_sc_hd__clkbuf_4
+   Generating output for cell sky130_fd_sc_hd__buf_2
+   Generating output for cell sky130_fd_sc_hd__decap_3
+   Generating output for cell sky130_fd_sc_hd__fill_1
+   Generating output for cell sky130_fd_sc_hd__fill_2
+   Generating output for cell sky130_fd_sc_hd__decap_8
+   Generating output for cell sky130_ef_sc_hd__decap_12
+   Generating output for cell sky130_fd_sc_hd__diode_2
+   Generating output for cell sky130_fd_sc_hd__tapvpwrvgnd_1
+   Generating output for cell sky130_fd_sc_hd__dlymetal6s2s_1
+   Generating output for cell sky130_fd_sc_hd__decap_6
+   Generating output for cell sky130_fd_sc_hd__clkbuf_2
+   Generating output for cell sky130_fd_sc_hd__decap_4
+   Generating output for cell sky130_fd_sc_hd__a21o_1
+   Generating output for cell sky130_fd_sc_hd__buf_1
+   Generating output for cell sky130_fd_sc_hd__nand2_2
+   Generating output for cell sky130_fd_sc_hd__or3_2
+   Generating output for cell sky130_fd_sc_hd__nand3_4
+   Generating output for cell sky130_fd_sc_hd__xor2_1
+   Generating output for cell sky130_fd_sc_hd__xnor2_4
+   Generating output for cell sky130_fd_sc_hd__o21ai_4
+   Generating output for cell sky130_fd_sc_hd__nand3_2
+   Generating output for cell sky130_fd_sc_hd__buf_4
+   Generating output for cell sky130_fd_sc_hd__o211ai_4
+   Generating output for cell sky130_fd_sc_hd__or3_1
+   Generating output for cell sky130_fd_sc_hd__o21ai_1
+   Generating output for cell sky130_fd_sc_hd__a211oi_1
+   Generating output for cell sky130_fd_sc_hd__nor3_1
+   Generating output for cell sky130_fd_sc_hd__or2b_2
+   Generating output for cell sky130_fd_sc_hd__a21oi_1
+   Generating output for cell sky130_fd_sc_hd__a211o_1
+   Generating output for cell sky130_fd_sc_hd__a21bo_2
+   Generating output for cell sky130_fd_sc_hd__or2_1
+   Generating output for cell sky130_fd_sc_hd__and3_1
+   Generating output for cell sky130_fd_sc_hd__or2b_1
+   Generating output for cell sky130_fd_sc_hd__xnor2_2
+   Generating output for cell sky130_fd_sc_hd__xor2_4
+   Generating output for cell sky130_fd_sc_hd__a21bo_1
+   Generating output for cell sky130_fd_sc_hd__xnor2_1
+   Generating output for cell sky130_fd_sc_hd__o21a_1
+   Generating output for cell sky130_fd_sc_hd__nand2_1
+   Generating output for cell sky130_fd_sc_hd__nor2_1
+   Generating output for cell sky130_fd_sc_hd__nor2_2
+   Generating output for cell sky130_fd_sc_hd__and2_1
+   Generating output for cell sky130_fd_sc_hd__o21ai_2
+   Generating output for cell sky130_fd_sc_hd__o31a_2
+   Generating output for cell sky130_fd_sc_hd__o21bai_2
+   Generating output for cell sky130_fd_sc_hd__o211a_2
+   Generating output for cell sky130_fd_sc_hd__o211a_1
+   Generating output for cell sky130_fd_sc_hd__nor3_2
+   Generating output for cell sky130_fd_sc_hd__o211ai_2
+   Generating output for cell sky130_fd_sc_hd__nand3_1
+   Generating output for cell sky130_fd_sc_hd__a32o_1
+   Generating output for cell sky130_fd_sc_hd__and4bb_1
+   Generating output for cell sky130_fd_sc_hd__o21ba_2
+   Generating output for cell sky130_fd_sc_hd__o211ai_1
+   Generating output for cell sky130_fd_sc_hd__nand4_1
+   Generating output for cell sky130_fd_sc_hd__a2111oi_2
+   Generating output for cell sky130_fd_sc_hd__a21oi_2
+   Generating output for cell sky130_fd_sc_hd__inv_2
+   Generating output for cell sky130_fd_sc_hd__a211oi_2
+   Generating output for cell sky130_fd_sc_hd__a21boi_1
+   Generating output for cell sky130_fd_sc_hd__clkbuf_1
+   Generating output for cell sky130_fd_sc_hd__xor2_2
+   Generating output for cell sky130_fd_sc_hd__or4_1
+   Generating output for cell sky130_fd_sc_hd__o22ai_1
+   Generating output for cell sky130_fd_sc_hd__a211o_4
+   Generating output for cell sky130_fd_sc_hd__nor2_4
+   Generating output for cell sky130_fd_sc_hd__o22ai_2
+   Generating output for cell sky130_fd_sc_hd__nor4_1
+   Generating output for cell sky130_fd_sc_hd__and2b_1
+   Generating output for cell sky130_fd_sc_hd__a31oi_2
+   Generating output for cell sky130_fd_sc_hd__and4_2
+   Generating output for cell sky130_fd_sc_hd__a211oi_4
+   Generating output for cell sky130_fd_sc_hd__or4bb_2
+   Generating output for cell sky130_fd_sc_hd__a2bb2oi_2
+   Generating output for cell sky130_fd_sc_hd__or4_2
+   Generating output for cell sky130_fd_sc_hd__a22oi_4
+   Generating output for cell sky130_fd_sc_hd__o32ai_2
+   Generating output for cell sky130_fd_sc_hd__a2bb2o_1
+   Generating output for cell sky130_fd_sc_hd__or4bb_4
+   Generating output for cell sky130_fd_sc_hd__a211o_2
+   Generating output for cell sky130_fd_sc_hd__or2_2
+   Generating output for cell sky130_fd_sc_hd__o22a_1
+   Generating output for cell sky130_fd_sc_hd__o2111ai_4
+   Generating output for cell sky130_fd_sc_hd__o22ai_4
+   Generating output for cell sky130_fd_sc_hd__and4bb_2
+   Generating output for cell sky130_fd_sc_hd__o21bai_4
+   Generating output for cell sky130_fd_sc_hd__a2bb2oi_1
+   Generating output for cell sky130_fd_sc_hd__o21ba_1
+   Generating output for cell sky130_fd_sc_hd__or3_4
+   Generating output for cell sky130_fd_sc_hd__and2_2
+   Generating output for cell sky130_fd_sc_hd__a21o_2
+   Generating output for cell sky130_fd_sc_hd__nor3b_2
+   Generating output for cell sky130_fd_sc_hd__or4bb_1
+   Generating output for cell sky130_fd_sc_hd__and3b_1
+   Generating output for cell sky130_fd_sc_hd__and4b_2
+   Generating output for cell sky130_fd_sc_hd__nor4_2
+   Generating output for cell sky130_fd_sc_hd__a21boi_4
+   Generating output for cell sky130_fd_sc_hd__o21bai_1
+   Generating output for cell sky130_fd_sc_hd__and2b_2
+   Generating output for cell sky130_fd_sc_hd__a2bb2o_2
+   Generating output for cell sky130_fd_sc_hd__nor3b_1
+   Generating output for cell sky130_fd_sc_hd__or3b_1
+   Generating output for cell sky130_fd_sc_hd__a32o_2
+   Generating output for cell sky130_fd_sc_hd__or2_4
+   Generating output for cell sky130_fd_sc_hd__a21oi_4
+   Generating output for cell sky130_fd_sc_hd__a31o_1
+   Generating output for cell sky130_fd_sc_hd__a22o_1
+   Generating output for cell sky130_fd_sc_hd__and3_2
+   Generating output for cell sky130_fd_sc_hd__o21a_2
+   Generating output for cell sky130_fd_sc_hd__nand4_2
+   Generating output for cell sky130_fd_sc_hd__nand3b_2
+   Generating output for cell sky130_fd_sc_hd__and4_1
+   Generating output for cell sky130_fd_sc_hd__o2bb2a_1
+   Generating output for cell sky130_fd_sc_hd__a22oi_1
+   Generating output for cell sky130_fd_sc_hd__nor3_4
+   Generating output for cell sky130_fd_sc_hd__a22oi_2
+   Generating output for cell sky130_fd_sc_hd__or3b_2
+   Generating output for cell sky130_fd_sc_hd__and4b_1
+   Generating output for cell sky130_fd_sc_hd__clkbuf_8
+   Generating output for cell sky130_fd_sc_hd__buf_6
+   Generating output for cell sky130_fd_sc_hd__nand4_4
+   Generating output for cell sky130_fd_sc_hd__a31o_2
+   Generating output for cell sky130_fd_sc_hd__a41o_1
+   Generating output for cell sky130_fd_sc_hd__o32a_1
+   Generating output for cell sky130_fd_sc_hd__a32oi_4
+   Generating output for cell sky130_fd_sc_hd__o2bb2a_2
+   Generating output for cell sky130_fd_sc_hd__o32a_2
+   Generating output for cell sky130_fd_sc_hd__a22o_2
+   Generating output for cell sky130_fd_sc_hd__o31a_1
+   Generating output for cell sky130_fd_sc_hd__and3b_2
+   Generating output for cell sky130_fd_sc_hd__a21boi_2
+   Generating output for cell sky130_fd_sc_hd__a21bo_4
+   Generating output for cell sky130_fd_sc_hd__a31oi_4
+   Generating output for cell sky130_fd_sc_hd__and4_4
+   Generating output for cell sky130_fd_sc_hd__or4b_1
+   Generating output for cell sky130_fd_sc_hd__nand4b_2
+   Generating output for cell sky130_fd_sc_hd__o311ai_4
+   Generating output for cell sky130_fd_sc_hd__nand2_4
+   Generating output for cell sky130_fd_sc_hd__a31o_4
+   Generating output for cell sky130_fd_sc_hd__or4b_2
+   Generating output for cell sky130_fd_sc_hd__or4_4
+   Generating output for cell sky130_fd_sc_hd__a221oi_4
+   Generating output for cell sky130_fd_sc_hd__a31oi_1
+   Generating output for cell sky130_fd_sc_hd__nor3b_4
+   Generating output for cell sky130_fd_sc_hd__o311a_1
+   Generating output for cell sky130_fd_sc_hd__a2111o_1
+   Generating output for cell sky130_fd_sc_hd__o311ai_1
+   Generating output for cell sky130_fd_sc_hd__mux2_2
+   Generating output for cell mult_comb_32x32
+[INFO]: GDS Write Complete

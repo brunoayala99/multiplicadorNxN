@@ -1,0 +1,7 @@
+{
+    "DESIGN_NAME": "mult_seq_32x32",
+    "VERILOG_FILES": "dir::src/*.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 20.0,
+    "DESIGN_IS_CORE": true
+}

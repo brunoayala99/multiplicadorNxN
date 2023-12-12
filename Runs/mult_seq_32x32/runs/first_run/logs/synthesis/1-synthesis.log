@@ -1,0 +1,1181 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.30+48 (git sha1 14d50a176d5, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Verilog-2005 frontend: /openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v
+Parsing SystemVerilog input from `/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v' to AST representation.
+Generating RTLIL representation for module `\mult_seq_32x32'.
+Successfully finished Verilog frontend.
+
+2. Generating Graphviz representation of design.
+Writing dot description to `/openlane/designs/mult_seq_32x32/runs/first_run/tmp/synthesis/hierarchy.dot'.
+Dumping module mult_seq_32x32 to page 1.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \mult_seq_32x32
+
+3.2. Analyzing design hierarchy..
+Top module:  \mult_seq_32x32
+Removed 0 unused modules.
+
+4. Executing TRIBUF pass.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1. Analyzing design hierarchy..
+Top module:  \mult_seq_32x32
+
+5.2. Analyzing design hierarchy..
+Top module:  \mult_seq_32x32
+Removed 0 unused modules.
+
+6. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:203$29 in module mult_seq_32x32.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:194$28 in module mult_seq_32x32.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:185$27 in module mult_seq_32x32.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:176$26 in module mult_seq_32x32.
+Marked 1 switch rules as full_case in process $proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:167$25 in module mult_seq_32x32.
+Removed a total of 0 dead cases.
+
+8. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 8 assignments to connections.
+
+9. Executing PROC_INIT pass (extract init attributes).
+
+10. Executing PROC_ARST pass (detect async resets in processes).
+
+11. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~5 debug messages>
+
+12. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:254$42'.
+Creating decoders for process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:251$41'.
+Creating decoders for process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:248$40'.
+Creating decoders for process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:203$29'.
+     1/1: $1\n82_o[0:0]
+Creating decoders for process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:194$28'.
+     1/1: $1\n78_o[0:0]
+Creating decoders for process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:185$27'.
+     1/1: $1\n74_o[0:0]
+Creating decoders for process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:176$26'.
+     1/1: $1\n71_o[1:0]
+Creating decoders for process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:167$25'.
+     1/1: $1\n67_o[0:0]
+
+13. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\mult_seq_32x32.\n82_o' from process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:203$29'.
+No latch inferred for signal `\mult_seq_32x32.\n78_o' from process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:194$28'.
+No latch inferred for signal `\mult_seq_32x32.\n74_o' from process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:185$27'.
+No latch inferred for signal `\mult_seq_32x32.\n71_o' from process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:176$26'.
+No latch inferred for signal `\mult_seq_32x32.\n67_o' from process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:167$25'.
+
+14. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\mult_seq_32x32.\n116_q' using process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:254$42'.
+  created $dff cell `$procdff$73' with positive edge clock.
+Creating register for signal `\mult_seq_32x32.\n115_q' using process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:251$41'.
+  created $dff cell `$procdff$74' with positive edge clock.
+Creating register for signal `\mult_seq_32x32.\n114_q' using process `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:248$40'.
+  created $dff cell `$procdff$75' with positive edge clock.
+
+15. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+16. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:254$42'.
+Removing empty process `mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:251$41'.
+Removing empty process `mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:248$40'.
+Found and cleaned up 1 empty switch in `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:203$29'.
+Removing empty process `mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:203$29'.
+Found and cleaned up 1 empty switch in `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:194$28'.
+Removing empty process `mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:194$28'.
+Found and cleaned up 1 empty switch in `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:185$27'.
+Removing empty process `mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:185$27'.
+Found and cleaned up 1 empty switch in `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:176$26'.
+Removing empty process `mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:176$26'.
+Found and cleaned up 1 empty switch in `\mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:167$25'.
+Removing empty process `mult_seq_32x32.$proc$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:167$25'.
+Cleaned up 5 empty switches.
+
+17. Executing CHECK pass (checking for obvious problems).
+Checking module mult_seq_32x32...
+Found and reported 0 problems.
+
+18. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+<suppressed ~3 debug messages>
+
+19. Executing FLATTEN pass (flatten design).
+
+20. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+Removed 1 unused cells and 53 unused wires.
+<suppressed ~3 debug messages>
+
+22. Executing OPT pass (performing simple optimizations).
+
+22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+<suppressed ~54 debug messages>
+Removed a total of 18 cells.
+
+22.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mult_seq_32x32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $ternary$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:154$19.
+    dead port 1/2 on $mux $ternary$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:156$20.
+Removed 2 multiplexer ports.
+<suppressed ~8 debug messages>
+
+22.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mult_seq_32x32.
+    New ctrl vector for $pmux cell $procmux$50: { $procmux$46_CMP $auto$opt_reduce.cc:134:opt_pmux$77 }
+    New ctrl vector for $pmux cell $procmux$56: { $auto$opt_reduce.cc:134:opt_pmux$79 $procmux$45_CMP }
+    New ctrl vector for $pmux cell $procmux$68: { $procmux$48_CMP $auto$opt_reduce.cc:134:opt_pmux$81 }
+    New ctrl vector for $pmux cell $procmux$44: { $procmux$47_CMP $procmux$46_CMP $auto$opt_reduce.cc:134:opt_pmux$83 }
+  Optimizing cells in module \mult_seq_32x32.
+Performed a total of 5 changes.
+
+22.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+22.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+22.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+Removed 0 unused cells and 16 unused wires.
+<suppressed ~1 debug messages>
+
+22.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+22.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+22.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mult_seq_32x32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+22.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mult_seq_32x32.
+Performed a total of 0 changes.
+
+22.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+22.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+22.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+
+22.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+22.16. Finished OPT passes. (There is nothing left to do.)
+
+23. Executing FSM pass (extract and optimize FSM).
+
+23.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking mult_seq_32x32.n114_q as FSM state register:
+    Circuit seems to be self-resetting.
+
+23.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+23.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+23.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+
+23.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+23.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+23.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+23.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+24. Executing OPT pass (performing simple optimizations).
+
+24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+24.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mult_seq_32x32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+24.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mult_seq_32x32.
+Performed a total of 0 changes.
+
+24.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+24.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$75 ($dff) from module mult_seq_32x32 (D = \estado_sig, Q = \n114_q).
+Adding SRST signal on $procdff$74 ($dff) from module mult_seq_32x32 (D = \n95_o [64:32], Q = \n115_q [64:32], rval = 33'000000000000000000000000000000000).
+Adding EN signal on $procdff$74 ($dff) from module mult_seq_32x32 (D = \acu_sig [31:0], Q = \n115_q [31:0]).
+Adding EN signal on $auto$ff.cc:266:slice$91 ($sdff) from module mult_seq_32x32 (D = \n95_o [64:32], Q = \n115_q [64:32]).
+Adding SRST signal on $procdff$73 ($dff) from module mult_seq_32x32 (D = \n107_o, Q = \n116_q, rval = 6'000000).
+Adding EN signal on $auto$ff.cc:266:slice$103 ($sdff) from module mult_seq_32x32 (D = \n103_o [5:0], Q = \n116_q).
+
+24.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+Removed 2 unused cells and 3 unused wires.
+<suppressed ~5 debug messages>
+
+24.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+<suppressed ~2 debug messages>
+
+24.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+24.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mult_seq_32x32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+24.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mult_seq_32x32.
+Performed a total of 0 changes.
+
+24.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+24.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+
+24.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+24.16. Finished OPT passes. (There is nothing left to do.)
+
+25. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 33) from port A of cell mult_seq_32x32.$add$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:118$1 ($add).
+Removed top 1 bits (of 33) from port B of cell mult_seq_32x32.$add$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:118$1 ($add).
+Removed top 1 bits (of 2) from port B of cell mult_seq_32x32.$eq$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:150$17 ($eq).
+Removed top 33 bits (of 65) from mux cell mult_seq_32x32.$ternary$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:226$32 ($mux).
+Removed top 26 bits (of 32) from port A of cell mult_seq_32x32.$add$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:232$34 ($add).
+Removed top 31 bits (of 32) from port B of cell mult_seq_32x32.$add$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:232$34 ($add).
+Removed top 26 bits (of 32) from port Y of cell mult_seq_32x32.$add$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:232$34 ($add).
+Removed top 25 bits (of 32) from port A of cell mult_seq_32x32.$ge$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:244$38 ($ge).
+Removed top 26 bits (of 32) from port B of cell mult_seq_32x32.$ge$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:244$38 ($ge).
+Converting cell mult_seq_32x32.$ge$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:244$38 ($ge) from signed to unsigned.
+Removed top 1 bits (of 7) from port A of cell mult_seq_32x32.$ge$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:244$38 ($ge).
+Removed top 1 bits (of 6) from port B of cell mult_seq_32x32.$ge$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:244$38 ($ge).
+Removed top 3 bits (of 4) from port B of cell mult_seq_32x32.$procmux$45_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell mult_seq_32x32.$procmux$46_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell mult_seq_32x32.$procmux$47_CMP0 ($eq).
+Removed top 33 bits (of 65) from wire mult_seq_32x32.acu_sig.
+
+26. Executing PEEPOPT pass (run peephole optimizers).
+
+27. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+28. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module mult_seq_32x32:
+  creating $macc model for $add$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:118$1 ($add).
+  creating $macc model for $add$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:232$34 ($add).
+  creating $alu model for $macc $add$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:232$34.
+  creating $alu model for $macc $add$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:118$1.
+  creating $alu model for $ge$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:244$38 ($ge): new $alu
+  creating $alu cell for $ge$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:244$38: $auto$alumacc.cc:485:replace_alu$107
+  creating $alu cell for $add$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:118$1: $auto$alumacc.cc:485:replace_alu$116
+  creating $alu cell for $add$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:232$34: $auto$alumacc.cc:485:replace_alu$119
+  created 3 $alu and 0 $macc cells.
+
+29. Executing SHARE pass (SAT-based resource sharing).
+
+30. Executing OPT pass (performing simple optimizations).
+
+30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mult_seq_32x32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mult_seq_32x32.
+Performed a total of 0 changes.
+
+30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+30.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+30.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+30.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mult_seq_32x32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+30.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mult_seq_32x32.
+Performed a total of 0 changes.
+
+30.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+30.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+30.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+
+30.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+30.16. Finished OPT passes. (There is nothing left to do.)
+
+31. Executing MEMORY pass.
+
+31.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+31.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+31.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+31.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+31.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+31.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+
+31.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+31.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+31.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+
+31.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+32. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+
+33. Executing OPT pass (performing simple optimizations).
+
+33.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+<suppressed ~33 debug messages>
+
+33.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+33.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+Removed 6 unused cells and 6 unused wires.
+<suppressed ~7 debug messages>
+
+33.5. Finished fast OPT passes.
+
+34. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+35. Executing OPT pass (performing simple optimizations).
+
+35.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+35.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+35.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mult_seq_32x32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+35.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mult_seq_32x32.
+    Consolidated identical input bits for $mux cell $ternary$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:140$12:
+      Old ports: A=2'01, B=2'11, Y=\n37_o
+      New ports: A=1'0, B=1'1, Y=\n37_o [1]
+      New connections: \n37_o [0] = 1'1
+    Consolidated identical input bits for $mux cell $ternary$/openlane/designs/mult_seq_32x32/src/mult_seq_32x32.v:158$21:
+      Old ports: A=2'01, B=2'11, Y=\n56_o
+      New ports: A=1'0, B=1'1, Y=\n56_o [1]
+      New connections: \n56_o [0] = 1'1
+  Optimizing cells in module \mult_seq_32x32.
+Performed a total of 2 changes.
+
+35.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+35.6. Executing OPT_SHARE pass.
+
+35.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+35.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+
+35.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+<suppressed ~2 debug messages>
+
+35.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+35.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mult_seq_32x32..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+35.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mult_seq_32x32.
+Performed a total of 0 changes.
+
+35.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+35.14. Executing OPT_SHARE pass.
+
+35.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+35.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+
+35.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+35.18. Finished OPT passes. (There is nothing left to do.)
+
+36. Executing TECHMAP pass (map to technology primitives).
+
+36.1. Executing Verilog-2005 frontend: /build/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/build/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+36.2. Continuing TECHMAP pass.
+Using template $paramod$adbaf76fa5a3091a329503792521395f8ff4d1a4\_90_alu for cells of type $alu.
+Using template $paramod$32efbfac1c4dc57230cf86180788fdfd12e3b511\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod$857150d3a9b7fb38b73bbaa31ff652415e553f98\_90_alu for cells of type $alu.
+Using template $paramod$c5c783b17ab1d780abfad8cfe6563a0a7b47a3b0\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $sdffe.
+Using template $paramod$97565c3687be688407d1272a293bd9d0ae6852dc\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000001 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000110 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000100001 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~754 debug messages>
+
+37. Executing OPT pass (performing simple optimizations).
+
+37.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+<suppressed ~125 debug messages>
+
+37.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+<suppressed ~30 debug messages>
+Removed a total of 10 cells.
+
+37.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+37.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+Removed 38 unused cells and 163 unused wires.
+<suppressed ~39 debug messages>
+
+37.5. Finished fast OPT passes.
+
+38. Executing ABC pass (technology mapping using ABC).
+
+38.1. Extracting gate netlist of module `\mult_seq_32x32' to `<abc-temp-dir>/input.blif'..
+Extracted 411 gates and 552 wires to a netlist network with 138 inputs and 79 outputs.
+
+38.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+38.1.2. Re-integrating ABC results.
+ABC RESULTS:              XNOR cells:       34
+ABC RESULTS:               NOR cells:       33
+ABC RESULTS:               MUX cells:       66
+ABC RESULTS:                OR cells:       57
+ABC RESULTS:             ORNOT cells:       10
+ABC RESULTS:               NOT cells:        5
+ABC RESULTS:              NAND cells:       21
+ABC RESULTS:            ANDNOT cells:      101
+ABC RESULTS:               AND cells:       21
+ABC RESULTS:               XOR cells:       35
+ABC RESULTS:        internal signals:      335
+ABC RESULTS:           input signals:      138
+ABC RESULTS:          output signals:       79
+Removing temp directory.
+
+39. Executing OPT pass (performing simple optimizations).
+
+39.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+<suppressed ~30 debug messages>
+
+39.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+39.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+39.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+Removed 1 unused cells and 392 unused wires.
+<suppressed ~24 debug messages>
+
+39.5. Finished fast OPT passes.
+
+40. Executing HIERARCHY pass (managing design hierarchy).
+
+40.1. Analyzing design hierarchy..
+Top module:  \mult_seq_32x32
+
+40.2. Analyzing design hierarchy..
+Top module:  \mult_seq_32x32
+Removed 0 unused modules.
+
+41. Printing statistics.
+
+=== mult_seq_32x32 ===
+
+   Number of wires:                354
+   Number of wire bits:           1518
+   Number of public wires:          50
+   Number of public wire bits:    1214
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                453
+     $_ANDNOT_                     100
+     $_AND_                         21
+     $_DFFE_PP_                     34
+     $_MUX_                         66
+     $_NAND_                        21
+     $_NOR_                         33
+     $_NOT_                          4
+     $_ORNOT_                        9
+     $_OR_                          57
+     $_SDFFE_PP0P_                  39
+     $_XNOR_                        34
+     $_XOR_                         35
+
+42. Executing CHECK pass (checking for obvious problems).
+Checking module mult_seq_32x32...
+Found and reported 0 problems.
+
+43. Generating Graphviz representation of design.
+Writing dot description to `/openlane/designs/mult_seq_32x32/runs/first_run/tmp/synthesis/post_techmap.dot'.
+Dumping module mult_seq_32x32 to page 1.
+
+44. Executing SHARE pass (SAT-based resource sharing).
+
+45. Executing OPT pass (performing simple optimizations).
+
+45.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+45.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+45.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mult_seq_32x32..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+45.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mult_seq_32x32.
+Performed a total of 0 changes.
+
+45.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mult_seq_32x32'.
+Removed a total of 0 cells.
+
+45.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+45.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+
+45.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mult_seq_32x32.
+
+45.9. Finished OPT passes. (There is nothing left to do.)
+
+46. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+Removed 0 unused cells and 34 unused wires.
+<suppressed ~34 debug messages>
+
+47. Printing statistics.
+
+=== mult_seq_32x32 ===
+
+   Number of wires:                320
+   Number of wire bits:            642
+   Number of public wires:          16
+   Number of public wire bits:     338
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                453
+     $_ANDNOT_                     100
+     $_AND_                         21
+     $_DFFE_PP_                     34
+     $_MUX_                         66
+     $_NAND_                        21
+     $_NOR_                         33
+     $_NOT_                          4
+     $_ORNOT_                        9
+     $_OR_                          57
+     $_SDFFE_PP0P_                  39
+     $_XNOR_                        34
+     $_XOR_                         35
+
+mapping tbuf
+
+48. Executing TECHMAP pass (map to technology primitives).
+
+48.1. Executing Verilog-2005 frontend: /home/brunoayala/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/brunoayala/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+48.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+49. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+50. Executing TECHMAP pass (map to technology primitives).
+
+50.1. Executing Verilog-2005 frontend: /home/brunoayala/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/brunoayala/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+50.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+51. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+52. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+52.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\mult_seq_32x32':
+  mapped 73 $_DFF_P_ cells to \sky130_fd_sc_hd__dfxtp_2 cells.
+
+53. Printing statistics.
+
+=== mult_seq_32x32 ===
+
+   Number of wires:                432
+   Number of wire bits:            754
+   Number of public wires:          16
+   Number of public wire bits:     338
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                565
+     $_ANDNOT_                     100
+     $_AND_                         21
+     $_MUX_                        178
+     $_NAND_                        21
+     $_NOR_                         33
+     $_NOT_                          4
+     $_ORNOT_                        9
+     $_OR_                          57
+     $_XNOR_                        34
+     $_XOR_                         35
+     sky130_fd_sc_hd__dfxtp_2       73
+
+[INFO]: USING STRATEGY AREA 0
+
+54. Executing ABC pass (technology mapping using ABC).
+
+54.1. Extracting gate netlist of module `\mult_seq_32x32' to `/tmp/yosys-abc-IhGzWV/input.blif'..
+Extracted 492 gates and 631 wires to a netlist network with 138 inputs and 74 outputs.
+
+54.1.1. Executing ABC.
+Running ABC command: "/build/bin/yosys-abc" -s -f /tmp/yosys-abc-IhGzWV/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-IhGzWV/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-IhGzWV/input.blif 
+ABC: + read_lib -w /openlane/designs/mult_seq_32x32/runs/first_run/tmp/synthesis/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.06 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130A_merged" from "/openlane/designs/mult_seq_32x32/runs/first_run/tmp/synthesis/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.09 sec
+ABC: Memory =    9.54 MB. Time =     0.09 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /openlane/designs/mult_seq_32x32/runs/first_run/tmp/synthesis/synthesis.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2".
+ABC: Setting output load to be 33.442001.
+ABC: + read_constr /openlane/designs/mult_seq_32x32/runs/first_run/tmp/synthesis/synthesis.sdc 
+ABC: + fx 
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 20000.0 -M 5 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + amap -m -Q 0.1 -F 20 -A 20 -C 5000 
+ABC: + retime -D -D 20000.0 
+ABC: + &get -n 
+ABC: + &st 
+ABC: + &dch 
+ABC: + &nf 
+ABC: + &put 
+ABC: + buffer -N 10 -S 750.0 
+ABC: + upsize -D 20000.0 
+ABC: Current delay (3429.16 ps) does not exceed the target delay (20000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 20000.0 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =    445 ( 14.6 %)   Cap = 10.1 ff (  3.5 %)   Area =     3706.05 ( 85.4 %)   Delay =  3498.09 ps  (  4.5 %)               
+ABC: Path  0 --      58 : 0    2 pi                        A =   0.00  Df =  21.9  -13.0 ps  S =  36.1 ps  Cin =  0.0 ff  Cout =   6.3 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     359 : 2    4 sky130_fd_sc_hd__and2_2   A =   7.51  Df = 209.9   -3.6 ps  S =  86.7 ps  Cin =  1.5 ff  Cout =  13.5 ff  Cmax = 303.0 ff  G =  874  
+ABC: Path  2 --     376 : 3    2 sky130_fd_sc_hd__or3_2    A =   7.51  Df = 683.4 -304.1 ps  S =  79.6 ps  Cin =  1.5 ff  Cout =   3.9 ff  Cmax = 310.4 ff  G =  242  
+ABC: Path  3 --     377 : 4    2 sky130_fd_sc_hd__or4_2    A =   8.76  Df =1237.1 -753.5 ps  S = 107.9 ps  Cin =  1.5 ff  Cout =   5.0 ff  Cmax = 310.4 ff  G =  313  
+ABC: Path  4 --     382 : 4    3 sky130_fd_sc_hd__o31a_2   A =  10.01  Df =1650.4 -356.4 ps  S =  90.9 ps  Cin =  2.3 ff  Cout =  13.8 ff  Cmax = 285.7 ff  G =  563  
+ABC: Path  5 --     425 : 4    4 sky130_fd_sc_hd__o211ai_2 A =  12.51  Df =1898.2 -471.2 ps  S = 231.5 ps  Cin =  4.4 ff  Cout =  14.2 ff  Cmax = 133.7 ff  G =  310  
+ABC: Path  6 --     458 : 3    3 sky130_fd_sc_hd__a21oi_2  A =   8.76  Df =2005.8 -380.2 ps  S = 165.1 ps  Cin =  4.6 ff  Cout =  10.8 ff  Cmax = 128.2 ff  G =  226  
+ABC: Path  7 --     462 : 2    5 sky130_fd_sc_hd__or2_2    A =   6.26  Df =2341.6 -546.9 ps  S =  78.3 ps  Cin =  1.5 ff  Cout =  11.4 ff  Cmax = 299.4 ff  G =  751  
+ABC: Path  8 --     478 : 5    3 sky130_fd_sc_hd__a311o_2  A =  11.26  Df =2734.7 -746.6 ps  S =  72.1 ps  Cin =  2.3 ff  Cout =   9.5 ff  Cmax = 298.5 ff  G =  397  
+ABC: Path  9 --     486 : 4    1 sky130_fd_sc_hd__a22o_2   A =  10.01  Df =3003.3 -865.4 ps  S =  46.6 ps  Cin =  2.3 ff  Cout =   5.1 ff  Cmax = 301.2 ff  G =  205  
+ABC: Path 10 --     487 : 3    1 sky130_fd_sc_hd__a21oi_2  A =   8.76  Df =3121.9 -247.6 ps  S =  88.1 ps  Cin =  4.6 ff  Cout =   2.5 ff  Cmax = 128.2 ff  G =   51  
+ABC: Path 11 --     488 : 4    1 sky130_fd_sc_hd__a211o_2  A =  10.01  Df =3220.1  -80.7 ps  S =  45.3 ps  Cin =  2.4 ff  Cout =   2.4 ff  Cmax = 325.0 ff  G =  100  
+ABC: Path 12 --     489 : 4    1 sky130_fd_sc_hd__o211a_2  A =  10.01  Df =3498.1 -175.8 ps  S = 204.0 ps  Cin =  2.4 ff  Cout =  33.4 ff  Cmax = 268.3 ff  G = 1415  
+ABC: Start-point = pi57 (\mcand [14]).  End-point = po30 ($auto$rtlil.cc:2607:MuxGate$1692).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =  138/   74  lat =    0  nd =   445  edge =   1200  area =3706.47  delay =14.00  lev = 14
+ABC: + write_blif /tmp/yosys-abc-IhGzWV/output.blif 
+
+54.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__and3b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nand3_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o311a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand4b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or4b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o31a_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__or4_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__or3_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o211ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__and4bb_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o2111a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a311o_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a31o_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nand4_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and4_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__and4b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__o21bai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_2 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__a211o_2 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__or2b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:       15
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:       28
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:       35
+ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__o221a_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__a21bo_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a22o_2 cells:       37
+ABC RESULTS:   sky130_fd_sc_hd__mux2_2 cells:       36
+ABC RESULTS:   sky130_fd_sc_hd__o211a_2 cells:       30
+ABC RESULTS:   sky130_fd_sc_hd__and3_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:       18
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:       20
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:       44
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:       24
+ABC RESULTS:   sky130_fd_sc_hd__buf_1 cells:       60
+ABC RESULTS:        internal signals:      419
+ABC RESULTS:           input signals:      138
+ABC RESULTS:          output signals:       74
+Removing temp directory.
+
+55. Executing SETUNDEF pass (replace undef values with defined constants).
+
+56. Executing HILOMAP pass (mapping to constant drivers).
+
+57. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+58. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mult_seq_32x32..
+Removed 26 unused cells and 779 unused wires.
+<suppressed ~225 debug messages>
+
+59. Executing INSBUF pass (insert buffer cells for connected wires).
+
+60. Executing CHECK pass (checking for obvious problems).
+Checking module mult_seq_32x32...
+Warning: Wire mult_seq_32x32.\product [63] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [62] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [61] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [60] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [59] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [58] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [57] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [56] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [55] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [54] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [53] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [52] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [51] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [50] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [49] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [48] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [47] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [46] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [45] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [44] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [43] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [42] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [41] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [40] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [39] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [38] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [37] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [36] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [35] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [34] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [33] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [32] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [31] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [30] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [29] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [28] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [27] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [26] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [25] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [24] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [23] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [22] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [21] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [20] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [19] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [18] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [17] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [16] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [15] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [14] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [13] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [12] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [11] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [10] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [9] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [8] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [7] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [6] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [5] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [4] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [3] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [2] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [1] is used but has no driver.
+Warning: Wire mult_seq_32x32.\product [0] is used but has no driver.
+Warning: Wire mult_seq_32x32.\done is used but has no driver.
+Found and reported 65 problems.
+
+61. Printing statistics.
+
+=== mult_seq_32x32 ===
+
+   Number of wires:                459
+   Number of wire bits:            584
+   Number of public wires:          15
+   Number of public wire bits:     140
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                518
+     sky130_fd_sc_hd__a211o_2        9
+     sky130_fd_sc_hd__a21bo_2        1
+     sky130_fd_sc_hd__a21boi_2       2
+     sky130_fd_sc_hd__a21o_2         7
+     sky130_fd_sc_hd__a21oi_2       20
+     sky130_fd_sc_hd__a221o_2       15
+     sky130_fd_sc_hd__a22o_2        37
+     sky130_fd_sc_hd__a22oi_2        1
+     sky130_fd_sc_hd__a311o_2        2
+     sky130_fd_sc_hd__a31o_2         2
+     sky130_fd_sc_hd__a31oi_2        2
+     sky130_fd_sc_hd__and2_2        24
+     sky130_fd_sc_hd__and2b_2        1
+     sky130_fd_sc_hd__and3_2         6
+     sky130_fd_sc_hd__and3b_2        1
+     sky130_fd_sc_hd__and4_2         3
+     sky130_fd_sc_hd__and4b_2        1
+     sky130_fd_sc_hd__and4bb_2       1
+     sky130_fd_sc_hd__buf_1         60
+     sky130_fd_sc_hd__dfxtp_2       73
+     sky130_fd_sc_hd__inv_2          5
+     sky130_fd_sc_hd__mux2_2        36
+     sky130_fd_sc_hd__nand2_2       35
+     sky130_fd_sc_hd__nand3_2        1
+     sky130_fd_sc_hd__nand3b_2       3
+     sky130_fd_sc_hd__nand4_2        2
+     sky130_fd_sc_hd__nand4b_2       1
+     sky130_fd_sc_hd__nor2_2        44
+     sky130_fd_sc_hd__o2111a_2       1
+     sky130_fd_sc_hd__o211a_2       30
+     sky130_fd_sc_hd__o211ai_2       1
+     sky130_fd_sc_hd__o21a_2        18
+     sky130_fd_sc_hd__o21ai_2        6
+     sky130_fd_sc_hd__o21ba_2        1
+     sky130_fd_sc_hd__o21bai_2       1
+     sky130_fd_sc_hd__o221a_2        3
+     sky130_fd_sc_hd__o22a_2         2
+     sky130_fd_sc_hd__o2bb2a_2       2
+     sky130_fd_sc_hd__o311a_2        1
+     sky130_fd_sc_hd__o31a_2         4
+     sky130_fd_sc_hd__or2_2         28
+     sky130_fd_sc_hd__or2b_2         2
+     sky130_fd_sc_hd__or3_2          2
+     sky130_fd_sc_hd__or4_2          3
+     sky130_fd_sc_hd__or4b_2         1
+     sky130_fd_sc_hd__xnor2_2       13
+     sky130_fd_sc_hd__xor2_2         4
+
+   Chip area for module '\mult_seq_32x32': 5258.793600
+
+62. Executing Verilog backend.
+Dumping module `\mult_seq_32x32'.
+
+Warnings: 65 unique messages, 65 total
+End of script. Logfile hash: 36d7837ddb, CPU: user 1.05s system 0.01s, MEM: 30.57 MB peak
+Yosys 0.30+48 (git sha1 14d50a176d5, gcc 8.3.1 -fPIC -Os)
+Time spent: 55% 2x abc (1 sec), 10% 4x stat (0 sec), ...

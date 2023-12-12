@@ -1,0 +1,26 @@
+
+47. Printing statistics.
+
+=== mult_seq_16x16 ===
+
+   Number of wires:                177
+   Number of wire bits:            354
+   Number of public wires:          16
+   Number of public wire bits:     193
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                244
+     $_ANDNOT_                      56
+     $_AND_                         12
+     $_DFFE_PP_                     18
+     $_MUX_                         34
+     $_NAND_                        12
+     $_NOR_                         17
+     $_NOT_                          4
+     $_ORNOT_                        5
+     $_OR_                          28
+     $_SDFFE_PP0P_                  22
+     $_XNOR_                        18
+     $_XOR_                         18
+
